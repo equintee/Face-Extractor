@@ -3,7 +3,7 @@ import os
 #Emirhan UREY @equintee
 
 #Getting image as source.
-src = cv.imread('3131.jpg')
+src = cv.imread('src.jpg')
 #Converting it to gray scale.
 gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
 
