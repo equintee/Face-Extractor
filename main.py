@@ -1,9 +1,11 @@
 import cv2 as cv
 import os
+import time
 #Emirhan UREY @equintee
 
+img_src = input("Enter photograph directory that you want to extract faces from: ")
 #Getting image as source.
-src = cv.imread('src.jpg')
+src = cv.imread(img_src)
 #Converting it to gray scale.
 gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
 
@@ -28,4 +30,6 @@ i = 1
 for faces in face_list:
     cv.imwrite(f"{i}.jpg", faces)
     i += 1
+
+time.sleep(3)
 
